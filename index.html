@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ポートフォリオ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 30px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #4a90e2;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .button.active {
+      background-color: #e67e22;
+    }
+
+    .card {
+      background: white;
+      width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>シンプルポートフォリオサイト</h1>
+    <p>自分の作品やプロフィールを紹介するWebサイト</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>プロフィール</h2>
+      <p>Web制作を学習中です。HTML・CSS・JavaScriptを使ったサイト制作に取り組んでいます。</p>
+    </div>
+
+    <div class="card">
+      <h2>作品紹介</h2>
+      <p>シンプルポートフォリオサイト</p>
+      <p>クリックで色が変わるボタンを実装しました。</p>
+
+      <button class="button" onclick="changeColor(this)">
+        クリックしてください
+      </button>
+    </div>
+  </section>
+
+  <script>
+    function changeColor(button) {
+      button.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
